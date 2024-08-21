@@ -4,7 +4,7 @@ Calculation of the bio-climatic variables in three steps:
 
 input are daily mean temperature (tavg), min temperature (tmin), max temperature (tmax), precipitation (pre), potential evapotranspiration (pet) and weekly soil water content (swc).
 
->> Remark: We use python package xarray. Unfortunately our HPC with slurm did not allow the parallel processing from dask we handled it to separate the large files in longitudinal chunks using .isel() 
+> Remark: We use python package xarray. Unfortunately our HPC with slurm did not allow the parallel processing from dask we handled it to separate the large files in longitudinal chunks using .isel() 
 
 Following Order of processing applies:
 
@@ -28,6 +28,6 @@ For publication purpose we combined all data variables according to their specif
     - ```testStack.py``` checks, if this stacking was succesful by rastermath with single files
 
 
->> This code can not be run as the base variables can not be supplied - it rather is a verification of processing
+> This code can not be run as the base variables can not be supplied - it rather is a verification of processing
 
 Used packages are attached in requirements.txt
