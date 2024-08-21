@@ -12,6 +12,5 @@ module load GCCcore/10.2.0 GCC/10.2.0 Python/3.8.6 OpenMPI/4.0.5 netCDF/4.7.4 GC
 source /home/$USER/venv/clim/bin/activate
 
 export K=$SLURM_ARRAY_TASK_ID
-#python /home/$USER/Workspace/paperClimate/preparePlotsDaily.py 
 #python /home/$USER/Workspace/paperClimate/stackAndRename.py
 python /home/$USER/Workspace/paperClimate/testStack.py
